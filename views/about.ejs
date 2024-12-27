@@ -1,0 +1,52 @@
+<%- include("partials/header.ejs") %>
+
+<body  class="sand-background" >
+
+<div class="mt-2" >
+  <h1 class="theborder" style="font-size: 50px; font-weight: bold; padding-top: 3%; padding-bottom: 3%;">Your Results:</h1>
+
+  <div class="sand-background pt-2" >
+      <% for (let i in pack){  %>
+          
+      <h1 class="theborder" style="font-size: 30px; padding-top: 3%; padding-bottom: 3%;" >
+        <% var y = parseInt(i); %>
+        <p> Job Result Number: <%= y+1 %></p>
+        <p> Title of the Job: <%= pack[i].job_title %></p>
+        <p> Company: <%= pack[i].company %></p>
+        <p> Job Location: <%= pack[i].location %></p>
+        <p> The Job Salary: <%= pack[i].salary %></p>
+        <p> Date Posted: <%= pack[i].posted_time %></p>   
+        <p href="<%= pack[i].company_linkedin_url %>" > Url for the job: <%= pack[i].company_linkedin_url %></p>
+      </h1>
+    <% } %>
+  
+  </div> 
+  
+
+
+
+
+
+
+
+  <!-- <div class="theborder">
+    <p style="font-size: 30px; padding-top: 3%; text-decoration-line: underline;" >Technical Skills:</p>
+      <p style="font-size: 30px; padding-top: 3%;">My Knowledge:</p>
+        <p style="font-size: 20px;">Python</p>
+        <p style="font-size: 20px;">HTML</p>
+        <p style="font-size: 20px;">CSS</p>
+      <p style="font-size: 30px; padding-top: 3%;">Familiar With:</p>
+        <p style="font-size: 20px;">JavaScript</p>
+        <p style="font-size: 20px;">NodeJs</p>
+        <p style="font-size: 20px;">EJS</p>
+        <p style="font-size: 20px;">Bootstrap</p>
+        <p style="font-size: 20px;">Pandas</p>
+        <p style="font-size: 20px;">Numpy</p>
+        <p style="font-size: 20px;">APIs</p>
+        <p style="font-size: 20px;">JSON</p>
+  </div> -->
+
+</div>
+</body>
+  <%- include("partials/footer.ejs") %>
+  
