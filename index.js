@@ -1,5 +1,4 @@
-// pira idees apo auto to site : https://rapidapi.com/rockapis-rockapis-default/api/linkedin-data-api/playground/apiendpoint_37969cae-3842-4d47-ab13-6cdbcf928b5c
-// den to anebasa
+//APIs site : https://rapidapi.com/rockapis-rockapis-default/api/linkedin-data-api/playground/apiendpoint_37969cae-3842-4d47-ab13-6cdbcf928b5c
 import express from "express";
 import axios from "axios";
 import bodyParser from "body-parser";
